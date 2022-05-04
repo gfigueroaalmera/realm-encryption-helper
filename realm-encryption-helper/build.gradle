@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
-
+group = 'com.github.gfigueroaalmera'
+version = '1.0.7'
 android {
     compileSdkVersion 30
 
@@ -28,15 +29,17 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
-project.afterEvaluate {
+
+
+afterEvaluate {
     publishing {
         publications {
-            maven(MavenPublication) {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
                 groupId = 'com.github.gfigueroaalmera'
                 artifactId = 'realm-encryption-helper'
-                version = android.defaultConfig.versionName
-                artifact bundleDebugAar
-
+                version = '1.0.7'
             }
         }
     }
