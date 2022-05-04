@@ -1,6 +1,6 @@
 # realm-encryption-helper
 
-[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-RealmEncryptionHelper-green.svg?style=flat )]( https://android-arsenal.com/details/1/6617 )
+
 
 [ ![Download](https://api.bintray.com/packages/tntkhang/maven/realm-encryption-helper/images/download.svg) ](https://bintray.com/tntkhang/maven/realm-encryption-helper/_latestVersion)
 
